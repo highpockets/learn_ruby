@@ -111,14 +111,19 @@ end
 
 describe &quot;#multiply&quot; do
 
-  it &quot;multiplies two numbers&quot;
+  it &quot;multiplies two numbers&quot; do
+    expect(multiply([3,5])).to eq(15)
+  end
 
-  it &quot;multiplies several numbers&quot;
+  it &quot;multiplies several numbers&quot; do
+    expect(multiply([3,5,10])).to eq(150)
+  end
 
 end
 
 describe &quot;#power&quot; do
-  it &quot;raises one number to the power of another number&quot;
+  it &quot;raises one number to the power of another number&quot; do
+    expect(power([5,2])).to eq(25)
 end
 
 # http://en.wikipedia.org/wiki/Factorial
